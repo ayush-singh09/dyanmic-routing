@@ -24,3 +24,7 @@ body{
 .active{
   color: rgb(253, 83, 83);
 }
+
+::-webkit-scrollbar{
+  display: none;
+}
