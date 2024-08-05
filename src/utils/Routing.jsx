@@ -6,15 +6,15 @@ import About from "../pages/About";
 import UserInfo from "../pages/UserInfo";
 
 function Routing() {
-
   return (
     <Routes>
       <Route path="/" element={<Home />} />
 
-      <Route path="/user" element={<About />} />
-      <Route path="/user" element={<User />} />
-
-      <Route path="/user/:username" element={<UserInfo />} />
+      <Route path="/user" element={<User />}>
+        
+        <Route path="/user/:username" element={<UserInfo />} />
+        
+      </Route>
 
       <Route path="/about" element={<About />} />
     </Routes>
